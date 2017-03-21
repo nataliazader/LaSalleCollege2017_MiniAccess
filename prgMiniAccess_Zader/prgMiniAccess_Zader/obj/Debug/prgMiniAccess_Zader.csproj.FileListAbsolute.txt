@@ -1,1 +1,13 @@
 C:\Users\Natalya\Desktop\prgMiniAccess_Zader\prgMiniAccess_Zader\bin\Debug\prgMiniAccess_Zader.exe.config
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\bin\Debug\prgMiniAccess_Zader.exe.config
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\bin\Debug\prgMiniAccess_Zader.exe
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\bin\Debug\prgMiniAccess_Zader.pdb
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.csprojResolveAssemblyReference.cache
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.frmMain.resources
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.Properties.Resources.resources
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.csproj.GenerateResource.Cache
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.exe
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.pdb
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\Interop.DAO.dll
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.csproj.ResolveComReference.cache
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\bin\Debug\Interop.DAO.dll
