@@ -82,9 +82,9 @@ namespace prgMiniAccess_Zader
 
             foreach (Relation rel in db.Relations)
             {
-                listBoxInfo.Items.Add("RElation Name:" + rel.Name);
-                listBoxInfo.Items.Add("RElation Name:" + rel.Table);
-                listBoxInfo.Items.Add("RElation Name:" + rel.ForeignTable);
+                listBoxInfo.Items.Add("Relation Name:" + rel.Name);
+                listBoxInfo.Items.Add("Relation Table:" + rel.Table);
+                listBoxInfo.Items.Add("Relation Foreign Table:" + rel.ForeignTable);
                 foreach (Field fd in rel.Fields)
                 {
                     listBoxInfo.Items.Add("field:" + fd.Name);
