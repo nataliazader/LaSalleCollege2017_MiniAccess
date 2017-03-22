@@ -36,15 +36,15 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newRelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelDatabase = new System.Windows.Forms.Panel();
-            this.labelDatabase = new System.Windows.Forms.Label();
-            this.listBoxInfo = new System.Windows.Forms.ListBox();
-            this.labelInfo = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
+            this.labelInfo = new System.Windows.Forms.Label();
+            this.listBoxInfo = new System.Windows.Forms.ListBox();
+            this.labelDatabase = new System.Windows.Forms.Label();
             this.menuStripMain.SuspendLayout();
             this.panelDatabase.SuspendLayout();
             this.SuspendLayout();
@@ -104,41 +104,44 @@
             // tableToolStripMenuItem
             // 
             this.tableToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem1,
-            this.openToolStripMenuItem1,
+            this.newTableToolStripMenuItem,
+            this.newRelToolStripMenuItem,
             this.toolStripMenuItem3,
             this.exitToolStripMenuItem1});
             this.tableToolStripMenuItem.Enabled = false;
             this.tableToolStripMenuItem.Name = "tableToolStripMenuItem";
-            this.tableToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.tableToolStripMenuItem.Text = "Table";
+            this.tableToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.tableToolStripMenuItem.Text = "Create";
             // 
-            // newToolStripMenuItem1
+            // newTableToolStripMenuItem
             // 
-            this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
-            this.newToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem1.Size = new System.Drawing.Size(178, 22);
-            this.newToolStripMenuItem1.Text = "New";
+            this.newTableToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.newTableToolStripMenuItem.Name = "newTableToolStripMenuItem";
+            this.newTableToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.T)));
+            this.newTableToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.newTableToolStripMenuItem.Text = "Table";
+            this.newTableToolStripMenuItem.Click += new System.EventHandler(this.newTableToolStripMenuItem_Click);
             // 
-            // openToolStripMenuItem1
+            // newRelToolStripMenuItem
             // 
-            this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
-            this.openToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem1.Size = new System.Drawing.Size(178, 22);
-            this.openToolStripMenuItem1.Text = "Open";
+            this.newRelToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.newRelToolStripMenuItem.Name = "newRelToolStripMenuItem";
+            this.newRelToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.R)));
+            this.newRelToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.newRelToolStripMenuItem.Text = "Relation";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(178, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(190, 22);
             this.toolStripMenuItem3.Text = "  ";
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(178, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             // 
             // panelDatabase
@@ -150,28 +153,18 @@
             this.panelDatabase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDatabase.Location = new System.Drawing.Point(0, 24);
             this.panelDatabase.Name = "panelDatabase";
-            this.panelDatabase.Size = new System.Drawing.Size(784, 437);
+            this.panelDatabase.Size = new System.Drawing.Size(784, 487);
             this.panelDatabase.TabIndex = 1;
             this.panelDatabase.Visible = false;
             // 
-            // labelDatabase
+            // labelName
             // 
-            this.labelDatabase.AutoSize = true;
-            this.labelDatabase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatabase.Location = new System.Drawing.Point(310, 15);
-            this.labelDatabase.Name = "labelDatabase";
-            this.labelDatabase.Size = new System.Drawing.Size(105, 13);
-            this.labelDatabase.TabIndex = 0;
-            this.labelDatabase.Text = "Database Name: ";
-            // 
-            // listBoxInfo
-            // 
-            this.listBoxInfo.FormattingEnabled = true;
-            this.listBoxInfo.HorizontalScrollbar = true;
-            this.listBoxInfo.Location = new System.Drawing.Point(125, 60);
-            this.listBoxInfo.Name = "listBoxInfo";
-            this.listBoxInfo.Size = new System.Drawing.Size(630, 290);
-            this.listBoxInfo.TabIndex = 2;
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(421, 15);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(0, 13);
+            this.labelName.TabIndex = 4;
             // 
             // labelInfo
             // 
@@ -183,23 +176,34 @@
             this.labelInfo.TabIndex = 3;
             this.labelInfo.Text = "Information :";
             // 
-            // labelName
+            // listBoxInfo
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(421, 15);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(0, 13);
-            this.labelName.TabIndex = 4;
+            this.listBoxInfo.FormattingEnabled = true;
+            this.listBoxInfo.HorizontalScrollbar = true;
+            this.listBoxInfo.Location = new System.Drawing.Point(125, 60);
+            this.listBoxInfo.Name = "listBoxInfo";
+            this.listBoxInfo.Size = new System.Drawing.Size(630, 394);
+            this.listBoxInfo.TabIndex = 2;
+            // 
+            // labelDatabase
+            // 
+            this.labelDatabase.AutoSize = true;
+            this.labelDatabase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDatabase.Location = new System.Drawing.Point(310, 15);
+            this.labelDatabase.Name = "labelDatabase";
+            this.labelDatabase.Size = new System.Drawing.Size(105, 13);
+            this.labelDatabase.TabIndex = 0;
+            this.labelDatabase.Text = "Database Name: ";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(784, 511);
             this.Controls.Add(this.panelDatabase);
             this.Controls.Add(this.menuStripMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStripMain;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -223,8 +227,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tableToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem newTableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newRelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.Panel panelDatabase;

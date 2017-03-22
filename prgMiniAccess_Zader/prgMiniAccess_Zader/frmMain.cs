@@ -15,7 +15,7 @@ namespace prgMiniAccess_Zader
     public partial class frmMain : Form
     {
         DBEngine dbe = new DBEngine();
-        Database db;
+        public static Database db;
         public frmMain()
         {
             InitializeComponent();
@@ -23,34 +23,34 @@ namespace prgMiniAccess_Zader
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Create a new database";
-            saveFileDialog.InitialDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\App_Data";
-            saveFileDialog.Filter = "Database files(*.accdb)|*.accdb";
-            saveFileDialog.RestoreDirectory = true;
+            SaveFileDialog saveFD = new SaveFileDialog();
+            saveFD.Title = "Create a new database";
+            saveFD.InitialDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\App_Data";
+            saveFD.Filter = "Database files(*.accdb)|*.accdb";
+            saveFD.RestoreDirectory = true;
 
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (saveFD.ShowDialog() == DialogResult.OK)
             {
-                if (File.Exists(saveFileDialog.FileName))
-                    File.Delete(saveFileDialog.FileName);
-                db = dbe.CreateDatabase(saveFileDialog.FileName, LanguageConstants.dbLangGeneral);
-                labelName.Text = Path.GetFileName(saveFileDialog.FileName);
+                if (File.Exists(saveFD.FileName))
+                    File.Delete(saveFD.FileName);
+                db = dbe.CreateDatabase(saveFD.FileName, LanguageConstants.dbLangGeneral);
+                labelName.Text = Path.GetFileName(saveFD.FileName);
                 displayInfo();
             }
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Open an existing database";
-            openFileDialog.InitialDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\App_Data";
-            openFileDialog.Filter = "Database files(*.accdb)|*.accdb";
-            openFileDialog.FilterIndex = 2;
-            openFileDialog.RestoreDirectory = true;
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            OpenFileDialog openFD = new OpenFileDialog();
+            openFD.Title = "Open an existing database";
+            openFD.InitialDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\App_Data";
+            openFD.Filter = "Database files(*.accdb)|*.accdb";
+            openFD.FilterIndex = 2;
+            openFD.RestoreDirectory = true;
+            if (openFD.ShowDialog() == DialogResult.OK)
             {
-                db = dbe.OpenDatabase(openFileDialog.FileName);
-                labelName.Text = Path.GetFileName(openFileDialog.FileName);
+                db = dbe.OpenDatabase(openFD.FileName);
+                labelName.Text = Path.GetFileName(openFD.FileName);
                 displayInfo();
             }
         }
@@ -75,7 +75,7 @@ namespace prgMiniAccess_Zader
             {
                 listBoxInfo.Items.Add("\tTable:" + oneTable.Name);
                 foreach (Field field in oneTable.Fields)
-                    listBoxInfo.Items.Add("\tField:" + field.Name);
+                    listBoxInfo.Items.Add("\t\tField:" + field.Name);
                 //foreach (Index inx in oneTable.Indexes)
                 //    listBoxInfo.Items.Add("\tIndex:" + inx.Name);
             }
@@ -92,5 +92,15 @@ namespace prgMiniAccess_Zader
                 }
             }
         }
+
+        private void newTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelDatabase.Visible = false;
+            frmNewTable frmNT = new frmNewTable();
+            frmNT.Text = "Database : " + Path.GetFileName(db.Name) + " - Creating a new table";
+            frmNT.MdiParent = this;
+            frmNT.Show();
+        }
+
     }
 }
