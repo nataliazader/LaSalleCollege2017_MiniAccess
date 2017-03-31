@@ -32,14 +32,14 @@
             this.textBoxTableName = new System.Windows.Forms.TextBox();
             this.labelTableName = new System.Windows.Forms.Label();
             this.dataGridViewTable = new System.Windows.Forms.DataGridView();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.richTextBoxErr = new System.Windows.Forms.RichTextBox();
             this.ColumnTableName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ColumnSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnIndex = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ColumnAutoIncr = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.richTextBoxErr = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +74,34 @@
             this.dataGridViewTable.Size = new System.Drawing.Size(534, 256);
             this.dataGridViewTable.TabIndex = 2;
             // 
+            // ColumnTableName
+            // 
+            this.ColumnTableName.HeaderText = "Name";
+            this.ColumnTableName.Name = "ColumnTableName";
+            this.ColumnTableName.Width = 120;
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Type";
+            this.ColumnType.Name = "ColumnType";
+            // 
+            // ColumnSize
+            // 
+            this.ColumnSize.HeaderText = "Size";
+            this.ColumnSize.Name = "ColumnSize";
+            // 
+            // ColumnIndex
+            // 
+            this.ColumnIndex.HeaderText = "Index";
+            this.ColumnIndex.Name = "ColumnIndex";
+            // 
+            // ColumnAutoIncr
+            // 
+            this.ColumnAutoIncr.HeaderText = "AutoIncrement";
+            this.ColumnAutoIncr.Name = "ColumnAutoIncr";
+            this.ColumnAutoIncr.TrueValue = "T";
+            this.ColumnAutoIncr.Width = 90;
+            // 
             // buttonSave
             // 
             this.buttonSave.Location = new System.Drawing.Point(448, 319);
@@ -102,34 +130,6 @@
             this.richTextBoxErr.Size = new System.Drawing.Size(418, 64);
             this.richTextBoxErr.TabIndex = 5;
             this.richTextBoxErr.Text = "";
-            // 
-            // ColumnTableName
-            // 
-            this.ColumnTableName.HeaderText = "Name";
-            this.ColumnTableName.Name = "ColumnTableName";
-            this.ColumnTableName.Width = 120;
-            // 
-            // ColumnType
-            // 
-            this.ColumnType.HeaderText = "Type";
-            this.ColumnType.Name = "ColumnType";
-            // 
-            // ColumnSize
-            // 
-            this.ColumnSize.HeaderText = "Size";
-            this.ColumnSize.Name = "ColumnSize";
-            // 
-            // ColumnIndex
-            // 
-            this.ColumnIndex.HeaderText = "Index";
-            this.ColumnIndex.Name = "ColumnIndex";
-            // 
-            // ColumnAutoIncr
-            // 
-            this.ColumnAutoIncr.HeaderText = "AutoIncrement";
-            this.ColumnAutoIncr.Name = "ColumnAutoIncr";
-            this.ColumnAutoIncr.TrueValue = "T";
-            this.ColumnAutoIncr.Width = 90;
             // 
             // frmNewTable
             // 

@@ -12,3 +12,5 @@ C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\ob
 C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.csproj.ResolveComReference.cache
 C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\bin\Debug\Interop.DAO.dll
 C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.frmNewTable.resources
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.frmNewRelation.resources
+C:\Users\Natalya\Documents\MiniAccess\prgMiniAccess_Zader\prgMiniAccess_Zader\obj\Debug\prgMiniAccess_Zader.frmOpenTable.resources
